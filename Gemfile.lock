@@ -3,12 +3,6 @@ GEM
   specs:
     addressable (2.2.7)
     chronic (0.6.7)
-    chunky_png (1.2.5)
-    compass (0.12.1)
-      chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.1)
-    fssm (0.2.8.1)
     heroku (2.24.0)
       launchy (>= 0.3.2)
       netrc (~> 0.7.1)
@@ -25,7 +19,6 @@ GEM
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rubyzip (0.9.7)
-    sass (3.1.15)
     shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.3.2)
@@ -39,7 +32,6 @@ PLATFORMS
 
 DEPENDENCIES
   chronic
-  compass
   heroku
   redis
   shotgun
