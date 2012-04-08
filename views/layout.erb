@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Hire Sam Soffes</title>
+  <link rel="me" href="http://www.google.com/profiles/samsoffes" />
+  <link rel="author" type="text/plain" href="http://samsoff.es/humans.txt" />
+  <link href="/stylesheets/application.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=768, maximum-scale=1.0" />
+</head>
+<body>
+  <header>
+    <h1><a href="/" rel="home">Hire Sam.</a></h1>
+  </header>
+  <section>
+    <%= yield %>
+  </section>
+  <footer>
+    <p>Copyright &copy; 2012 <a href="http://samsoff.es/" rel="external nofollow">Sam Soffes</a></p>
+  </footer>
+  <% if ENV['RACK_ENV'] == 'production' %>
+  <script type="text/javascript">var _gauges=_gauges||[];(function(){var t=document.createElement('script');t.async=true;t.id='gauges-tracker';t.setAttribute('data-site-id','4f81adb9f5a1f549c2000026');t.src='//secure.gaug.es/track.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(t, s);})();</script>
+  <% end %>
+</body>
+</html>
