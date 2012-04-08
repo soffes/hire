@@ -6,17 +6,17 @@
 <p><em>$200 per hour</em>. Non-negotiable.</p>
 
 <h3>Availability</h3>
-<p>Limited to <em>10 hours a week</em>.</p>
+<p>Limited to <em>10 hours a week</em>. More hours may be possible upon request.</p>
 
 <table class="avabilitiy">
   <tbody>
     <% weeks.each do |week| %>
     <tr <%= week[:booked] ? 'class="booked"' : 'class="available"' %>>
       <td><%= week[:start_date] %> — <%= week[:end_date] %>:</td>
-      <td><%= week[:booked] ? 'Booked' : '<a href="javascript:;">Available</a>' %></td>
+      <td><%= week[:booked] ? 'Booked' : %Q{<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%61%6d@%6e%6f%74%68%69%6e%67%6d%61%67%69%63%61%6c.%63%6f%6d?subject=I want to hire you from #{week[:start_date]} to #{week[:end_date]}">Available</a>} %></td>
     </tr>
     <% end %>
   </tbody>
 </table>
 
-<p>To schedule work or for additional information, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%61%6d@%6e%6f%74%68%69%6e%67%6d%61%67%69%63%61%6c.%63%6f%6d">email Sam</a>.</p>
+<p>To schedule work or for additional information, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%61%6d@%6e%6f%74%68%69%6e%67%6d%61%67%69%63%61%6c.%63%6f%6d?subject=I want to hire you">email Sam</a>.</p>

@@ -21,6 +21,7 @@ GEM
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
+    redis (2.2.2)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rubyzip (0.9.7)
@@ -40,5 +41,6 @@ DEPENDENCIES
   chronic
   compass
   heroku
+  redis
   shotgun
   sinatra

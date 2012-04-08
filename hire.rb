@@ -1,3 +1,7 @@
+ENV['REDISTOGO_URL'] = 'redis://localhost:6379' unless ENV['REDISTOGO_URL']
+uri = URI.parse(ENV['REDISTOGO_URL'])
+$redis = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
+
 class Hire < Sinatra::Base
   configure do
     Compass.add_project_configuration(File.join(Sinatra::Application.root, 'config', 'compass.rb'))
@@ -14,17 +18,16 @@ class Hire < Sinatra::Base
     end_date = Chronic.parse('next Sunday', now: start_date)
     
     10.times do |i|
+      start_string = start_date.strftime('%b %e').gsub('  ', ' ')
       @weeks << {
-        booked: false,
-        start_date: start_date.strftime('%b %e'),
-        end_date: end_date.strftime('%b %e')
+        booked: $redis.get(start_string),
+        start_date: start_string,
+        end_date: end_date.strftime('%b %e').gsub('  ', ' ')
       }
       
       start_date = Chronic.parse('next Monday', now: end_date)
       end_date = Chronic.parse('next Sunday', now: start_date)
     end
-    
-    @weeks[3][:booked] = true
     
     erb :index, locals: { weeks: @weeks }
   end
