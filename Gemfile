@@ -7,5 +7,5 @@ gem 'thin'
 
 group :development do
   gem 'heroku'
-  gem 'foreman'
+  gem 'shotgun'
 end

@@ -5,7 +5,7 @@ $redis = Redis.new(:host => uri.host, :port => uri.port, :password => uri.passwo
 class Hire < Sinatra::Base
   get '/' do
     @weeks = []
-    start_date = Chronic.parse('next Monday')
+    start_date = Chronic.parse('Monday', context: :past)
     end_date = Chronic.parse('next Sunday', now: start_date)
     
     10.times do |i|
