@@ -9,7 +9,7 @@ class Hire < Sinatra::Base
     end_date = Chronic.parse('next Sunday', now: start_date)
     today = Time.now
     
-    10.times do |i|
+    12.times do |i|
       start_string = start_date.strftime('%b %e').gsub('  ', ' ')
       @weeks << {
         booked: (end_date < today or $redis.get(start_string)),
