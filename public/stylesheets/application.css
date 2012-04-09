@@ -188,7 +188,7 @@ body > header,body > section,body > footer {
 body > header {
   color:#a5a5a5;
   margin:3em auto;
-/  -webkit-transition-property:margin;
+  -webkit-transition-property:margin;
   -moz-transition-property:margin;
   -ms-transition-property:margin;
   -o-transition-property:margin;
