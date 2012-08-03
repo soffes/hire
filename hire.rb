@@ -22,6 +22,6 @@ class Hire < Sinatra::Base
     # end
     # 
     # erb :index, locals: { weeks: @weeks }
-    erb :closed
+    erb :index
   end
 end
