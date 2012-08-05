@@ -65,9 +65,9 @@ input {
 }
 
 a {
-  border-bottom:1px solid transparent;
-  color:#0881b3;
-  text-decoration:none;
+  border-bottom: 1px solid transparent;
+  color: #0881b3;
+  text-decoration: none;
 }
 
 a:hover {
@@ -80,7 +80,7 @@ strong {
 
 em {
   background-color:#fffeca;
-  padding:0 .1em;
+  padding: 0.1em;
 }
 
 i {
@@ -242,7 +242,19 @@ blockquote a:hover,body > header p a:hover,body > footer a:hover {
 }
 
 span.gray,table.avabilitiy tr.booked {
-  color:#777;
+  color: #777;
+}
+
+.light {
+  color: #999;
+}
+
+.light a {
+  color: #999;
+}
+
+.light a:hover {
+  color: #0881b3;
 }
 
 @media all and (min-width: 640px) {
