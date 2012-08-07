@@ -6,8 +6,4 @@ I recently [quit my job to start a company](http://samsoff.es/posts/here-we-go-a
 
 ### Rates
 
-$200 per hour. Non-negotiable.
-
-### Availability
-
-Limited up to 10 hours a week.
+[$1,000 per hour](http://samsoff.es/posts/one-thousand-dollars-an-hour). Non-negotiable.
