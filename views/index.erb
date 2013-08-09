@@ -1,16 +1,27 @@
-<p>Hello there. <a href="http://samsoff.es/about" rel="external nofollow">I'm Sam.</a> I was previously the Lead iOS Engineer at <a href="http://heysynthetic.com" rel="external nofollow">Synthetic</a>&mdash;the creators of <a href="http://hipstamatic.com" rel="external nofollow">Hipstamatic</a>. Here's my <a href="http://samsoff.es/projects" rel="external nofollow">recent projects</a> and <a href="https://github.com/samsoffes" rel="external nofollow">Github profile</a> if you're curious.</p>
-<p><em>I am available for iOS or Ruby on Rails consulting</em>.
+<p>Hello there. <a href="http://soff.es/about" rel="external nofollow">I'm Sam</a>. I was previously the VP of Engineering at <a href="http://seesaw.co" rel="external nofollow">Seesaw</a> and Lead iOS Engineer at <a href="http://hipstamatic.com" rel="external nofollow">Hipstamatic</a>. Here's my <a href="http://soff.es/projects" rel="external nofollow">recent projects</a> and <a href="https://github.com/samsoffes" rel="external nofollow">Github profile</a> if you're curious.</p>
 
-<p>I recently <a href="http://samsoff.es/posts/here-we-go-again" rel="external nofollow">quit my job to start a company</a> and work on <a href="http://cheddarapp.com" rel="external nofollow">Cheddar</a>. Instead of taking funding, I'm self-funding <a href="http://nothingmagical.com" rel="external nofollow">my company</a>. Until profitability, I'll be doing limited contract work to help fund <a href="https://cheddarapp.com" rel="external nofollow">my product efforts</a>.</p>
-
+<p><mark>I am available for iOS or Ruby on Rails consulting.</mark>
 
 <h3>Rates</h3>
-<p><em>$1,000 per hour</em>. The rate is non-negotiable. All time needs to be booked ahead of time. I will require half down up front. Minimum of 5 hour ($5,000) commitment.</p>
+<p><mark>$250 per hour.</mark> The rate is non-negotiable. All time needs to be booked ahead of time. I will require half down up front. Minimum of 5 hour ($1,250) commitment.</p>
+
+
+<h3>Availability</h3>
+<p>Limited to <mark>10 hours a week.</mark> More hours may be possible upon request.</p>
+
+<table class="avabilitiy">
+  <tbody>
+    <% weeks.each do |week| %>
+    <tr <%= week[:booked] ? 'class="booked"' : 'class="available"' %>>
+      <td><%= week[:start_date] %> — <%= week[:end_date] %>:</td>
+      <td><%= week[:booked] ? 'Booked' : %Q{<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%61%6d@%6e%6f%74%68%69%6e%67%6d%61%67%69%63%61%6c.%63%6f%6d?subject=I want to hire you from #{week[:start_date]} to #{week[:end_date]}">Available</a>} %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
 
 
 <h3>Legal</h3>
-<p>I prefer not to sign NDAs. If this is a requirement for you, there is a $10,000 fee to sign your NDA. <em>You will need to sign my consulting agreement</em>. It has confidentially agreement included. <a href="http://assets.samsoff.es/pdf/Consulting%20Agreement%20Sample.pdf">Sample Consulting Agreement</a>.</p>
+<p>I prefer not to sign NDAs. If this is a requirement for you, there is a $2,000 fee to sign your NDA. <mark>You will need to sign my consulting agreement.</mark> It has confidentially agreement included. <a href="http://assets.soff.es/pdf/Consulting%20Agreement%20Sample.pdf">Sample Consulting Agreement</a>.</p>
 
-<p>To schedule work or for additional information, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%61%6d@%6e%6f%74%68%69%6e%67%6d%61%67%69%63%61%6c.%63%6f%6d?subject=I want to hire you">email Sam</a>.</p>
-
-<p class="light" style="margin:3em 0">If you're looking for someone cheaper, I highly recommend talking to my friends at <a href="http://ovenbits.com" rel="external nofollow">Oven Bits</a> or <a href="http://bixbyapps.com" rel="external nofollow">Bixby Apps</a>. Tell them Sam Soffes sent you.</p>
+<p><strong>To schedule work or for additional information, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%61%6d@%6e%6f%74%68%69%6e%67%6d%61%67%69%63%61%6c.%63%6f%6d?subject=I want to hire you">email Sam</a>.</strong></p>

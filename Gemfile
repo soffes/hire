@@ -1,11 +1,28 @@
-source :rubygems
+source 'https://rubygems.org'
 
+# Latest Ruby
+ruby '2.0.0'
+
+# Simple HTTP
 gem 'sinatra'
-gem 'chronic'
-gem 'redis'
+
+# Web server
 gem 'thin'
 
+# Time
+gem 'chronic'
+
+# Key-value store
+gem 'redis'
+
+# Assets
+gem 'sprockets'
+gem 'sass'
+gem 'sprockets-sass'
+gem 'bourbon'
+
+# Development dependencies
 group :development do
-  gem 'heroku'
+  # Automatically reload
   gem 'shotgun'
 end
