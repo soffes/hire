@@ -15,6 +15,9 @@ gem 'chronic'
 # Key-value store
 gem 'redis'
 
+# Use the right host
+gem 'rack-canonical-host'
+
 # Assets
 gem 'sprockets'
 gem 'sass'

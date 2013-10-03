@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.5)
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
@@ -10,6 +11,9 @@ GEM
     hike (1.2.3)
     multi_json (1.7.8)
     rack (1.5.2)
+    rack-canonical-host (0.0.8)
+      addressable
+      rack (~> 1.0)
     rack-protection (1.5.0)
       rack
     redis (3.0.4)
@@ -41,6 +45,7 @@ PLATFORMS
 DEPENDENCIES
   bourbon
   chronic
+  rack-canonical-host
   redis
   sass
   shotgun
