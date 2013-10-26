@@ -17,10 +17,10 @@
     <%= yield %>
   </section>
   <footer>
-    <p>Copyright &copy; <%= Time.now.year %> <a href="http://soff.es/" rel="external nofollow">Sam Soffes</a></p>
+    <p>&copy; <%= Time.now.year %> <a href="http://soff.es/" rel="external nofollow">Sam Soffes</a></p>
   </footer>
   <% if ENV['RACK_ENV'] == 'production' %>
-  <script type="text/javascript">var _gauges=_gauges||[];(function(){var t=document.createElement('script');t.async=true;t.id='gauges-tracker';t.setAttribute('data-site-id','4f81adb9f5a1f549c2000026');t.src='//secure.gaug.es/track.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(t, s);})();</script>
+  <script>var _gauges=_gauges||[];(function(){var t=document.createElement('script');t.async=true;t.id='gauges-tracker';t.setAttribute('data-site-id','526b1633613f5d0aab00002d');t.src='//secure.gaug.es/track.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(t,s);})();</script>
   <% end %>
 </body>
 </html>
