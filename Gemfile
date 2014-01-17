@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
 # Latest Ruby
-ruby '2.0.0'
+ruby '2.1.0'
 
 # Simple HTTP
 gem 'sinatra'
 
 # Web server
-gem 'thin'
+gem 'puma'
 
 # Time
 gem 'chronic'
