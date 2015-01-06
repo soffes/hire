@@ -7,9 +7,20 @@
 
 
 <h3>Availability</h3>
-<p>I'm currently taking some time off to focus on building some of my own ideas. I am only accepting select projects starting in 2015.</p>
+<p>Limited to <mark>20 hours a week.</mark> More hours may be possible upon request.</p>
 
-<p style="color:#999">You should talk to my friends at <a href="http://ovenbits.com" rel="external nofollow">Oven Bits</a> or <a href="http://fictivekin.com" rel="external nofollow">Fictive Kin</a> if you need work done sooner. They both do very professional and high quality work. Tell them I sent you.</p>
+<table class="avabilitiy">
+  <tbody>
+    <% weeks.each do |week| %>
+    <tr <%= week[:booked] ? 'class="booked"' : 'class="available"' %>>
+      <td><%= week[:start_date] %>&ndash;<%= week[:end_date] %>:</td>
+      <td><%= week[:booked] ? 'Booked' : %Q{<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%61%6d@%6e%6f%74%68%69%6e%67%6d%61%67%69%63%61%6c.%63%6f%6d?subject=I want to hire you from #{week[:start_date]} to #{week[:end_date]}">Available</a>} %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<p style="color:#999">You should talk to my friends at <a href="http://ovenbits.com" rel="external nofollow">Oven Bits</a> if you need work done sooner. They do very professional and high quality work. Tell them I sent you.</p>
 
 
 <h3>Legal</h3>
