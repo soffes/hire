@@ -10,5 +10,9 @@ end
 
 desc 'Book a week'
 task :book, [:start_day] do |t, args|
-  Hire.redis[args[:start_day]] = true
+  require 'chronic'
+  start_date = Chronic.parse(args[:start_day])
+  end_date = Chronic.parse('next Friday', now: start_date)
+  Hire.redis[start_date.strftime('%b %e').gsub(/\s+/, ' ')] = true
+  puts "Week #{start_date.strftime('%b %e').gsub(/\s+/, ' ')}–#{end_date.strftime('%b %e').gsub(/\s+/, ' ')} booked."
 end

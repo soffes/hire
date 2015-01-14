@@ -4,16 +4,16 @@ source 'https://rubygems.org'
 ruby '2.2.0'
 
 # Simple HTTP
-gem 'sinatra'
+gem 'sinatra', require: false
 
 # Web server
 gem 'puma'
 
 # Time
-gem 'chronic'
+gem 'chronic', require: false
 
 # Key-value store
-gem 'redis'
+gem 'redis', require: false
 
 # Use the right host
 gem 'rack-canonical-host'
