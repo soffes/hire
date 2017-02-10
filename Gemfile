@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Latest Ruby
-ruby '2.2.0'
+ruby '2.3.3'
 
 # Simple HTTP
 gem 'sinatra', require: false
