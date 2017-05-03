@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Latest Ruby
-ruby '2.3.3'
+ruby '2.4.1'
 
 # Simple HTTP
 gem 'sinatra', require: false
@@ -23,6 +23,9 @@ gem 'sprockets'
 gem 'sass'
 gem 'sprockets-sass'
 gem 'bourbon'
+
+# Tools
+gem 'rake', require: false
 
 # Development dependencies
 group :development do
