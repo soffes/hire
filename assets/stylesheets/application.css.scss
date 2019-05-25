@@ -115,6 +115,10 @@ h1 {
   font-family: 'Landmark Dimensional A', 'Landmark Dimensional B';
   font-weight: 400;
   text-transform: capitalize;
+
+  span {
+    display: none;
+  }
 }
 
 body > header h1 {
